@@ -14169,7 +14169,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="prompt input_prompt">In&nbsp;[187]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">movie_details_pd_withmoreThan1Genre</span> <span class="o">=</span> <span class="n">movie_details_pd</span><span class="p">[</span><span class="n">movie_details_pd</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">3</span><span class="p">:</span><span class="mi">21</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span><span class="mi">1</span><span class="p">]</span>
@@ -14186,7 +14186,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[178]:</div>
+    <div class="prompt output_prompt">Out[187]:</div>
 
 
 
@@ -14367,13 +14367,13 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[190]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">resultmovie_details_pd_withmoreThan1Genre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">movie_details_pd_withmoreThan1Genre</span><span class="p">,</span> <span class="n">movie_details_pd_withmoreThan1Genre</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">3</span><span class="p">:</span><span class="mi">21</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 
-<span class="n">smallerSetOfColumns</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">resultmovie_details_pd_withmoreThan1Genre</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">resultmovie_details_pd_withmoreThan1Genre</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">22</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">smallerSetOfColumns</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">resultmovie_details_pd_withmoreThan1Genre</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">resultmovie_details_pd_withmoreThan1Genre</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">23</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 
 <span class="n">smallerSetOfColumns</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
@@ -14388,7 +14388,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[141]:</div>
+    <div class="prompt output_prompt">Out[190]:</div>
 
 
 
@@ -14438,8 +14438,8 @@ dtype: object</pre>
     </tr>
     <tr>
       <th>4</th>
-      <td>Babe</td>
-      <td>3</td>
+      <td>Twelve Monkeys</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>...</th>
@@ -14447,33 +14447,33 @@ dtype: object</pre>
       <td>...</td>
     </tr>
     <tr>
-      <th>266</th>
-      <td>Buddy</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>267</th>
-      <td>Truth or Consequences, N.M.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>268</th>
-      <td>Warriors of Virtue</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>269</th>
-      <td>Hana-bi</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>270</th>
+      <th>840</th>
       <td>MURDER and murder</td>
       <td>3</td>
     </tr>
+    <tr>
+      <th>841</th>
+      <td>Tainted</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>842</th>
+      <td>Mirage</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>843</th>
+      <td>B. Monkey</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>844</th>
+      <td>Sliding Doors</td>
+      <td>2</td>
+    </tr>
   </tbody>
 </table>
-<p>271 rows × 2 columns</p>
+<p>845 rows × 2 columns</p>
 </div>
 </div>
 
